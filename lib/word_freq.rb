@@ -4,7 +4,7 @@ class String
     input_words = self.downcase().split(" ")
     lower_case_word = word.downcase()
     if input_words.==([])&(word).==("")
-      freq = "Unable to make the count. Please enter a word into each box"
+      freq = "Unable to make the count. Please enter a word into each box."
     end
     input_words.each() do |input_word|
       if input_word.==(lower_case_word)
