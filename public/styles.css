@@ -1,0 +1,13 @@
+.word {
+  color: blue;
+  font-size: 25px;
+}
+
+.result {
+  color: red;
+  font-size: 30px;
+}
+
+.result_text {
+  font-size: 20px;
+}
