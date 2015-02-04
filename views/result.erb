@@ -4,6 +4,14 @@
 
 <div class="result_text">
 
-<p>The frequency of <span class='word'>"<%= @input_word %>"</span> in <span class='word'>"<%= @input_string %>"</span> is: <span class='result'> <%= @result %> </span></p>
+<% if @result != nil %>
+<p>The whole word frequency of <span class='word'>"<%= @input_word %>"</span> in <span class='word'>"<%= @input_string %>"</span> is: <span class='result'> <%= @result %> </span></p>
+<% end
+   if @result != nil %>
+
+<p>The partial word frequency of <span class='word'>"<%= @input_word %>"</span> in <span class='word'>"<%= @input_string %>"</span> is: <span class='result'> <%= @result_partial %> </span></p>
+
+<% end %>
+
 
 </div>
