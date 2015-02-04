@@ -1,5 +1,5 @@
 class String
-  define_method(:word_freq) do |word|
+  define_method(:whole_word_freq) do |word|
     freq = 0
     input_words = self.downcase().split(" ")
     lower_case_word = word.downcase()
@@ -14,5 +14,14 @@ class String
       end
     end
     freq
+  end
+
+  define_method(:partial_word_freq) do |word|
+    letters_of_word = word.split("").count
+    string_array_characters = self.split("").count
+    new_string_array_characters = self.split(word).join("").split("").count
+    partial_count = string_array_characters - new_string_array_characters
+    partials = partial_count / letters_of_word
+    partials
   end
 end
